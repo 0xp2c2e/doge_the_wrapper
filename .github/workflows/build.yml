@@ -36,13 +36,13 @@ jobs:
           name: build
 
       - name: Upload to Crust Websites
-        uses: crustio/ipfs-upload-action@2.0.4
+        uses: crustio/ipfs-upload-action@v2.0.4
         with:
           path: './build'
           seeds: ${{ secrets.CRUST_SEEDS }}
 
       - name: Pin to Crust
-        uses: crustio/ipfs-crust-action@2.0.6
+        uses: crustio/ipfs-crust-action@v2.0.6
         with:
           cid: ${{ steps.upload_site.outputs.hash }}
           seeds: ${{ secrets.CRUST_SEEDS }}
