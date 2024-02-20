@@ -47,5 +47,7 @@ jobs:
           cid: ${{ steps.upload_site.outputs.hash }}
           seeds: ${{ secrets.CRUST_SEEDS }}
 
+      - name: Print CID
+        run: echo "CID ${{ steps.upload_site.outputs.hash }}"
   
     
