@@ -1,0 +1,61 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add ethers
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Secundus\bin;C:\Python313\Scripts;C:\Python313;C:\Python311\Scripts;C:\Python311;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\VSCodium\bin;C:\Program Files\Git\cmd;C:\Program Files\Mullvad VPN\resources;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\PostgreSQL\14\bin;C:\Program Files (x86)\Yarn\bin;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files\Calibre2;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet;C:\Program Files\PowerShell\7;C:\Program Files\Hatch;C:\Program Files\PostgreSQL\16\bin;C:\Program Files\nodejs;C:\Users\Secundus\AppData\Local\Microsoft\WindowsApps;C:\Users\Secundus\.pyenv\pyenv-win\bin;C:\Users\Secundus\.pyenv\pyenv-win\shims;C:\Program Files\JetBrains\PyCharm 2022.2\bin;C:\Program Files\PostgreSQL\14\bin;C:\Program Files\heroku\bin;C:\Users\Secundus\AppData\Roaming\Python\Scripts;C:\Utils\poppler-22.12.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Users\Secundus\AppData\Local\Yarn\bin;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Users\Secundus\mongodb_shell\bin;C:\Program Files\MongoDB\Server\6.0\bin;C:\Users\Secundus\AppData\Roaming\npm;C:\Users\Secundus\AppData\Roaming\Python\Python313\Scripts
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  21.6.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Secundus\Code\PycharmProjects\web\svelte\wrapper\node_modules\@esbuild\win32-x64\esbuild.exe'
+
+npm manifest: 
+  {
+  	"name": "wrapper",
+  	"version": "0.0.1",
+  	"private": true,
+  	"scripts": {
+  		"dev": "vite dev",
+  		"build": "vite build",
+  		"preview": "vite preview",
+  		"test": "playwright test",
+  		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+  		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+  		"lint": "prettier --check . && eslint .",
+  		"format": "prettier --write ."
+  	},
+  	"devDependencies": {
+  		"@playwright/test": "^1.28.1",
+  		"@sveltejs/adapter-auto": "^3.0.0",
+  		"@sveltejs/kit": "^2.0.0",
+  		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+  		"@types/eslint": "8.56.0",
+  		"@typescript-eslint/eslint-plugin": "^6.0.0",
+  		"@typescript-eslint/parser": "^6.0.0",
+  		"eslint": "^8.56.0",
+  		"eslint-config-prettier": "^9.1.0",
+  		"eslint-plugin-svelte": "^2.35.1",
+  		"prettier": "^3.1.1",
+  		"prettier-plugin-svelte": "^3.1.2",
+  		"rollup": "^4.9.6",
+  		"svelte": "^4.2.7",
+  		"svelte-check": "^3.6.0",
+  		"tslib": "^2.4.1",
+  		"typescript": "^5.0.0",
+  		"vite": "^5.0.3"
+  	},
+  	"type": "module"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
