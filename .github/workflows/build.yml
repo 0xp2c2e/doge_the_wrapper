@@ -36,6 +36,7 @@ jobs:
           name: build
           path: build/
       - name: Upload to Crust Websites
+        id: upload_site
         uses: crustio/ipfs-upload-action@v2.0.4
         with:
           path: './build'
