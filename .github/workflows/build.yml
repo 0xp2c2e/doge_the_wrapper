@@ -49,6 +49,6 @@ jobs:
           seeds: ${{ secrets.CRUST_SEEDS }}
 
       - name: Print CID
-        run: echo "CID ${{ steps.upload_site.outputs.hash }}"
+        run: echo "https://ipfs.io/ipfs/${{ steps.upload_site.outputs.hash }}"
   
     
